@@ -1,0 +1,72 @@
+// media for large_desktop
+@mixin large_desktop {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  // media for large_desktop
+  
+  // media for desktop
+  @mixin desktop {
+    @media only screen and (min-width: 992px){
+      @content;
+    }
+  }
+  // media for desktop
+  
+  // media for tablets
+  @mixin tablets {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  // media for tablets
+  
+  // media for landscape_phones
+  @mixin landscape_phones {
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  }
+  // media for landscape_phones
+  
+  // media for phones
+  @mixin phones {
+    @media only screen and (min-width: 320px) {
+      @content;
+    }
+  }
+  @mixin iphoneFive_S {
+      @media only screen and (min-width:320px) {
+          @content;
+      }
+  }
+  // media for phones
+  
+  @mixin button_white_outline() {
+    padding: 5px 25px !important;
+    background: unset;
+    &:hover {
+      background-color: #e94fcb;
+      border-color: #e94fcb;
+      color: white;
+    }
+  }
+  @mixin button_white_bg() {
+    background: #fff;
+    color: #343a40;
+    &:hover {
+      background-color: #e94fcb !important;
+      border-color: #e94fcb !important;
+      color: white !important;
+    }
+  }
+  @mixin hero_banner_botton() {
+    float: left;
+    text-align: left;
+    margin-left: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  
