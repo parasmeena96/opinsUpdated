@@ -61,6 +61,7 @@
   }
   .player-name {
     font-size: 50px;
+    position: relative;
   }
   .player-current-label {
     font-size: 26px;
@@ -73,4 +74,18 @@
     top: -7px;
     right: 10px;
   }
+  .final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    color: #555;
+    font-size: 18px;
+    font-family: "Lato";
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+  }
+  .final-score:focus { outline: none; }
 }
