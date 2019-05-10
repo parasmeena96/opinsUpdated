@@ -42,6 +42,9 @@
     color: white !important;
     transition: 0.2s;
   }
+  button:focus {
+    outline: none;
+  }
   .btn-new {
     margin: 0 !important;
     position: absolute;
@@ -61,5 +64,13 @@
   }
   .player-current-label {
     font-size: 26px;
+  }
+  .active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #eb4d4d;
+    top: -7px;
+    right: 10px;
   }
 }
