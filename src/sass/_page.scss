@@ -310,9 +310,14 @@ div#collapsibleNavbar {
   }
 }
 
-nav#banner {
-  position: absolute;
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 999;
+
+
   @include landscape_phones {
     padding: 0 0;
   }
@@ -2219,4 +2224,45 @@ footer {
   @include large_desktop {
     padding: 50px 0 !important;
   }
+}
+
+#popUpMain {
+  position: fixed;
+  background: #0009;
+  color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+  #popUp {
+    min-height: 250px;
+    max-width: 600px;
+    width: 100%;    
+    background: #0000008a url(https://www.hcltech.com/sites/default/files/blog/images/255_role-transformation-web-designer-to-ui-developer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 5px 3px black;
+    background-blend-mode: overlay;
+    text-align: center;
+    #headingNews {
+      color: white;
+    }
+    #emailId {
+      width: 80%;
+      padding: 5px;
+      margin: 5% 0;
+      border-radius: 5px; 
+    }
+  }
+}
+.fixed {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+  background: #000;
+  color: white !important;
 }
