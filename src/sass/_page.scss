@@ -2266,3 +2266,21 @@ footer {
   background: #000;
   color: white !important;
 }
+
+.effective_toolsHeadingAddClass{
+  position :relative;
+  animation: mymove 2s;
+}
+@-webkit-keyframes mymove {
+  from {left: -1000px;}
+  to {left: 0px;}
+}
+
+.effective_toolsHeadingAddClass_Late{
+  position :relative;
+  animation: _Late 4s;
+}
+@-webkit-keyframes _Late {
+  from {left: -1000px;}
+  to {left: 0px;}
+}

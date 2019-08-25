@@ -163,7 +163,6 @@ $(window).scroll(function(){
   
     if (scroll >= 100) sticky.addClass('fixed');
     else sticky.removeClass('fixed');
-    console.log(scroll);
   });
 
 
@@ -190,3 +189,33 @@ $(window).scroll(function(){
         });
       });
   });
+
+
+  //slide from left
+  $(window).scroll(function(){
+    var sticky = $('.EffectiveToolssliderLeftEffect'),
+        scroll = $(window).scrollTop();
+  
+    if (scroll >= 100) sticky.addClass('effective_toolsHeadingAddClass');
+    else sticky.removeClass('effective_toolsHeadingAddClass');
+  });
+
+  //powerful tools for your customers
+  // left part
+  $(window).scroll(function(){
+      var sticky = $('.firstPart_powerFullTools li'),
+      scroll = $(window).scrollTop();
+
+      if (scroll >= 700) sticky.addClass('effective_toolsHeadingAddClass');
+      else sticky.removeClass('effective_toolsHeadingAddClass');
+
+  });
+
+  // right part
+$(window).scroll(function(){
+    var sticky = $('.powerFulTools-item_right_side_item .subitem'),
+    scroll = $(window).scrollTop();
+
+    if (scroll >= 700) sticky.addClass('effective_toolsHeadingAddClass_Late');
+    else sticky.removeClass('effective_toolsHeadingAddClass_Late');
+});
